@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+/*Color de fondo de la pagina principal y tipo de letra para el texto*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #aac8ce;
+	color: #423c3c;
+}
+header {
+	padding: 20px;
+}
+h1{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+p{
+	font-weight: 300;
+}
+a {
+	color: gray;
+}
+section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+/*Se inician la función flex para todas las caras y caracteristicas de todas*/
+[class^="cara-"]{
+	display: flex;
+	margin: 1em;
+	width: 100px;
+	height: 100px;
+	padding: 20px;
+	background: #e07fec;
+	border-radius: 16%;
+}
+.cara-uno{
+	justify-content: center;
+	align-items: center;
+}
+
+/* Alineación de los dos puntos de la cara dos*/
+.cara-dos{
+	justify-content: space-between;
+}
+
+/* pseudo-clase para organizar uno de los puntos de la cara*/
+.cara-dos .punto:nth-child(2){
+	align-self: flex-end;
+}
+.cara-tres{
+	justify-content: space-between;
+}
+.cara-tres .punto:nth-child(2){
+	align-self: center;
+}
+.cara-tres .punto:nth-child(3){
+	align-self: flex-end;
+}
+.cara-cuatro{
+	justify-content: space-between;
+}
+.cara-cuatro .columna {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.cara-cinco{
+	display: flex;
+	justify-content: space-between;
+}
+.cara-cinco .columna {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.cara-cinco .medio{
+	align-self: center;
+}
+.cara-seis{
+	display: flex;
+	justify-content: space-between;
+}
+.cara-seis .columna{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*Caracteristicas de los puntos de todas las caras*/
+.punto {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	box-shadow: inset 0 3px #111, inset 0 -3px #ffffff;
+}
